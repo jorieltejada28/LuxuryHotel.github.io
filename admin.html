@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="icon" type="image/jpg" href="image/favicon.png">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Luxury Administrator</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#" class="link active">Home</a></li>
+                    <li><a href="#" class="link">Visitors</a></li>
+                    <li><a href="#" class="link">Services</a></li>
+                    <li><a href="#" class="link">Profile</a></li>
+                    <li><a href="#" class="link">Claims</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn white-btn" id="loginBtn">Log Out</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+    </div>
+<script>
+   
+    function myMenuFunction() {
+     var i = document.getElementById("navMenu");
+ 
+    if(i.className === "nav-menu") {
+         i.className += " responsive";
+    } else {
+        i.className = "nav-menu";
+        }
+    }
+      
+</script>
+</body>
+</html>
